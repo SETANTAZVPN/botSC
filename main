@@ -43,13 +43,13 @@ main() {
     cd /root/regis/shell
     chmod +x *
     cp * /usr/bin
-    pip3.8 install -r /root/regis/requirements.txt
+    pip3 install -r /root/regis/requirements.txt
     cd 
     cat >/usr/bin/jhhhhh <<EOF
 #!/bin/bash
 
 cd 
-python3.8 -m regis
+python3 -m regis
 EOF
     chmod +x /usr/bin/jhhhhh
     cat >/etc/systemd/system/regggg.service <<EOF
